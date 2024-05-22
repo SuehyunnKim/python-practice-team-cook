@@ -29,4 +29,3 @@ gross_cost = chicken_gross_cost + curry_gross_cost
 
 #出力
 print("売上高:" + str(sales) + "、" + "原価:" + str(prime_cost) + "、" + "粗利:" + str(gross_cost), end="")
-
