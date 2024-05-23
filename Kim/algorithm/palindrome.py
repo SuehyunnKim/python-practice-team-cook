@@ -2,21 +2,21 @@
 # 続けてinputされた文字列が回文なのかを判別するプログラムを作成しよう
 
 # 回答1
-# print('回文判別プログラムです。終了したい場合は、‘cancel’を入力してください')
-# while True:
-#   word = input('判別したい文章や単語を入力してください：')
-#   if word == 'cancel':
-#     break
-#   elif word == word[::-1]:
-#     print(f'{word}は回文です')
-#   else:
-#     print(f'{word}は回文ではないです')
-
-# 回答2
-print('回文判別プログラムです。終了したい場合は、‘cancel’を入力してください')
+print('回文判別プログラムです。終了したい場合は、‘exit’を入力してください')
 while True:
   word = input('判別したい文章や単語を入力してください：')
-  if word == 'cancel':
+  if word == 'exit':
+    break
+  elif word == word[::-1]:
+    print(f'{word}は回文です')
+  else:
+    print(f'{word}は回文ではないです')
+
+# 回答2
+print('回文判別プログラムです。終了したい場合は、‘exit’を入力してください')
+while True:
+  word = input('判別したい文章や単語を入力してください：')
+  if word == 'exit':
     break
   else:
     is_palindrome = True
@@ -26,3 +26,8 @@ while True:
         print(f'{word}は回文ではないです')
         break
     print(f'{word}は回文です')
+
+
+# exceptions need to be deal with later
+# 1. space(' ') included in input
+# 2. Capital letters of english
